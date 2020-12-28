@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box, Icon, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, Section, StackItem, Stack, Formspree } from "@quarkly/components";
+import { Override, Menu, Section, Stack, StackItem, Formspree } from "@quarkly/components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
@@ -46,17 +46,16 @@ export default (() => {
 			color="--light"
 			font="--base"
 		>
-			<Stack>
-				<StackItem width="75%" lg-width="100%">
-					<Override slot="StackItemContent" flex-direction="column" />
-					<Text color="--lightD2" letter-spacing="1px" text-transform="uppercase" margin="0">
-						Excellence in everything
-					</Text>
-					<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0">
-						Striving for perfection in everything we do. Unparalleled service for everyone.
-					</Text>
-				</StackItem>
-			</Stack>
+			<Stack />
+			<StackItem width="75%" lg-width="100%">
+				<Override slot="StackItemContent" flex-direction="column" />
+				<Text color="--lightD2" letter-spacing="1px" text-transform="uppercase" margin="0">
+					Excellence in everything
+				</Text>
+				<Text as="h1" font="--headline1" md-font="--headline2" margin="24px 0 10px 0">
+					Striving for perfection in everything we do. Unparalleled service for everyone.
+				</Text>
+			</StackItem>
 			<Box text-align="center" margin="96px 0 0 0">
 				<Text margin="8px 0" text-transform="uppercase">
 					Who we are
