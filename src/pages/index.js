@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box, Icon, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, Section, Stack, StackItem, Formspree } from "@quarkly/components";
+import { Override, Menu, Section, StackItem, Stack, Formspree } from "@quarkly/components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
@@ -23,7 +23,7 @@ export default (() => {
 				md-flex-direction="column"
 			>
 				<Text margin="0" md-margin="0px 0 20px 0" text-align="left" font="--lead">
-					Awesome Company
+					chi
 				</Text>
 				<Menu
 					display="flex"
@@ -36,17 +36,19 @@ export default (() => {
 					<Override slot="link" text-decoration="none" color="--dark" padding="6px 12px" />
 					<Override slot="link-active" color="--primary" />
 					<Override slot="item" padding="6px" />
+					<Override slot="link-index">
+						Home
+					</Override>
 				</Menu>
 			</Box>
 		</Section>
 		<Section
-			background="linear-gradient(0deg,rgba(4, 8, 12, 0.6) 0%,rgba(4, 8, 12, 0.6) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1510125594188-5afc74c8cc43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) center/cover"
-			padding="64px 0"
+			background="linear-gradient(0deg,rgba(4, 8, 12, 0.6) 0%,rgba(4, 8, 12, 0.6) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1486254324135-ad4620b2f8de?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover"
+			padding="72px 0 72px 0"
 			sm-padding="40px 0"
 			color="--light"
 			font="--base"
 		>
-			<Stack />
 			<StackItem width="75%" lg-width="100%">
 				<Override slot="StackItemContent" flex-direction="column" />
 				<Text color="--lightD2" letter-spacing="1px" text-transform="uppercase" margin="0">
@@ -57,8 +59,8 @@ export default (() => {
 				</Text>
 			</StackItem>
 			<Box text-align="center" margin="96px 0 0 0">
-				<Text margin="8px 0" text-transform="uppercase">
-					Who we are
+				<Text margin="8px 0">
+					About me
 				</Text>
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
 			</Box>
